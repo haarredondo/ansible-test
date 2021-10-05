@@ -4,5 +4,5 @@
   tasks:
     - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
       copy:
-        content: hello world {{ path }} {{ FILE_CONTENT }}
+        content: hello world {{ path }} {{ env.FILE_CONTENT }}
         dest: /tmp/testfile.txt
